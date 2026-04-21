@@ -117,7 +117,6 @@ The factor 0.8 makes the hit zone a little smaller (more fair for the player).
 
 # SCREENSHOTS
 
-Add 3-4 screenshot of your game here.
 
 
 # CONTRIBUTIONS
