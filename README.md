@@ -23,7 +23,7 @@ https://github.com/Mahamadou-M-Traore/Star-Collector
 ```
 ## INTRODUCTION
 
-What is your game?
+**What is your game?**
 
 ```
 Our game is called Star Collector. It is a browser game made with HTML, CSS, and
@@ -34,7 +34,7 @@ The player moves left and right to catch the stars and avoid the asteroids.
 The game uses the HTML Canvas API to draw everything on the screen.
 There are no extra libraries. Everything is built from zero with plain JavaScript.
 ```
-What is the objective of the game?
+**What is the objective of the game?**
 
 
 The objective is to collect as many stars as possible and get the highest score.
@@ -46,7 +46,7 @@ The player tries to survive as long as possible and reach the highest level.
 
 ## GAME DESCRIPTION
 
-How does the game work?
+**How does the game work?**
 
 ```
 The game starts with a start screen. The player presses any key or clicks Start to begin.
@@ -62,7 +62,7 @@ The game ends when the spaceship touches an asteroid.
 - The game over screen shows the final score and level.
 The player can click Play Again to restart from level 1.
 
-What are the rules?
+**What are the rules?**
 
 ```
 Rule 1: Use the LEFT and RIGHT arrow keys to move the spaceship.
@@ -78,9 +78,9 @@ Rule 6: You can restart at any time after game over by clicking Play Again.
 
 ## GRAPHICS CONCEPTS USED
 
-What computer graphics concepts did you use? (e.g. Transformations, Collision
+**What computer graphics concepts did you use? (e.g. Transformations, Collision**
 
-Detection, Animation, etc.) Explain how you used them.
+**Detection, Animation, etc.) Explain how you used them.**
 
 ```
 We used five computer graphics concepts:
@@ -118,11 +118,9 @@ The factor 0.8 makes the hit zone a little smaller (more fair for the player).
 # SCREENSHOTS
 
 
+# Team Member #
 
 # CONTRIBUTIONS
-
-
-# Team Member #
 
 ```
 Mahamadou M. TRAORE — Game Logic
@@ -160,7 +158,7 @@ I made the HUD (heads-up display) with score, level, and a progress bar.
 
 # CONCLUSION
 
-What did you learn?
+**What did you learn?**
 
 ```
 We learned many things from this project:
@@ -180,7 +178,7 @@ We add objects with push() and remove them with splice().
 and spawn rate values as the level increases.
 - We learned how to split work between two team members and combine it.
 
-What would you improve if you had more time?
+**What would you improve if you had more time?**
 
 ```
 If we had more time, we would improve the game in these ways:
