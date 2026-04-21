@@ -35,19 +35,19 @@
 
   <script>
 
-    // ── SETUP ──────────────────────────────────────────────────────────
+    // ── SETUP 
     const canvas = document.getElementById("gameCanvas");
     const ctx    = canvas.getContext("2d");
 
 
-    // ── GAME STATE ─────────────────────────────────────────────────────
+    // ── GAME STATE 
     let score       = 0;
     let level       = 1;
     let gameOver    = false;
     let gameStarted = false;
 
 
-    // ── PLAYER ─────────────────────────────────────────────────────────
+    // ── PLAYER 
     const player = {
       x:      canvas.width / 2,
       y:      canvas.height - 65,
@@ -59,13 +59,13 @@
     };
 
 
-    // ── ARRAYS ─────────────────────────────────────────────────────────
+    // ── ARRAYS 
     let stars     = [];
     let asteroids = [];
     let particles = [];
 
 
-    // ── DIFFICULTY ─────────────────────────────────────────────────────
+    // ── DIFFICULTY 
     let fallSpeed         = 3;
     let starSpawnRate     = 90;
     let asteroidSpawnRate = 60;
@@ -73,7 +73,7 @@
     let asteroidTimer     = 0;
 
 
-    // ── BACKGROUND STARS ───────────────────────────────────────────────
+    // ── BACKGROUND STARS 
     const bgStars = [];
     for (let i = 0; i < 100; i++) {
       bgStars.push({
@@ -85,7 +85,7 @@
     }
 
 
-    // ── SPAWN FUNCTIONS ────────────────────────────────────────────────
+    // ── SPAWN FUNCTIONS 
     function spawnStar() {
       stars.push({
         x:        Math.random() * (canvas.width - 40) + 20,
@@ -126,7 +126,7 @@
     }
 
 
-    // ── COLLISION DETECTION ────────────────────────────────────────────
+    // ── COLLISION DETECTION 
     function circleCollision(a, ra, b, rb) {
       let dx   = a.x - b.x;
       let dy   = a.y - b.y;
@@ -135,7 +135,7 @@
     }
 
 
-    // ── DRAW: BACKGROUND ───────────────────────────────────────────────
+    // ── DRAW: BACKGROUND 
     function drawBackground() {
       let grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
       grad.addColorStop(0, "#05050f");
@@ -154,7 +154,7 @@
     }
 
 
-    // ── DRAW: PLAYER ───────────────────────────────────────────────────
+    // ── DRAW: PLAYER 
     function drawPlayer() {
       ctx.save();
       ctx.translate(player.x, player.y);
@@ -203,7 +203,7 @@
     }
 
 
-    // ── DRAW: STARS ────────────────────────────────────────────────────
+    // ── DRAW: STARS 
     function drawStar(star) {
       ctx.save();
       ctx.translate(star.x, star.y);
@@ -239,7 +239,7 @@
     }
 
 
-    // ── DRAW: ASTEROIDS ────────────────────────────────────────────────
+    // ── DRAW: ASTEROIDS 
     function drawAsteroid(asteroid) {
       ctx.save();
       ctx.translate(asteroid.x, asteroid.y);
@@ -272,7 +272,7 @@
     }
 
 
-    // ── DRAW: PARTICLES ────────────────────────────────────────────────
+    // ── DRAW: PARTICLES 
     function drawParticles() {
       for (let p of particles) {
         ctx.save();
@@ -286,7 +286,7 @@
     }
 
 
-    // ── DRAW: HUD ──────────────────────────────────────────────────────
+    // ── DRAW: HUD 
     function drawHUD() {
       ctx.fillStyle = "rgba(0,0,0,0.5)";
       ctx.fillRect(0, 0, canvas.width, 50);
@@ -319,7 +319,7 @@
     }
 
 
-    // ── UPDATE (GAME LOGIC) ────────────────────────────────────────────
+    // ── UPDATE (GAME LOGIC) 
     function update() {
       player.x += player.vx;
 
@@ -379,7 +379,7 @@
     }
 
 
-    // ── DRAW (RENDERING) ───────────────────────────────────────────────
+    // ── DRAW (RENDERING) 
     function draw() {
       drawBackground();
       drawParticles();
@@ -436,7 +436,7 @@
     }
 
 
-    // ── GAME LOOP ──────────────────────────────────────────────────────
+    // ── GAME LOOP 
     function gameLoop() {
       if (gameStarted && !gameOver) update();
       draw();
@@ -444,7 +444,7 @@
     }
 
 
-    // ── RESTART ────────────────────────────────────────────────────────
+    // ── RESTART 
     function restartGame() {
       score             = 0;
       level             = 1;
@@ -464,7 +464,7 @@
     }
 
 
-    // ── INPUT ──────────────────────────────────────────────────────────
+    // ── INPUT 
     document.addEventListener("keydown", function(e) {
       if (e.key === "ArrowRight") player.vx =  player.speed;
       if (e.key === "ArrowLeft")  player.vx = -player.speed;
@@ -491,7 +491,7 @@
     });
 
 
-    // ── START ──────────────────────────────────────────────────────────
+    // ── START 
     gameLoop();
 
   </script>
