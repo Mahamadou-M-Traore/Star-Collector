@@ -154,23 +154,6 @@ star-collector/
 
 ---
 
-## ▶️ How to Run
-
-### Option 1 - VS Code (recommended for development)
-Right-click `index.html` and select **Open with Live Server**.
-
-### Option 2 - Python local server
-```bash
-python3 -m http.server 8000
-```
-Then open: `http://localhost:8000`
-
-### Option 3 - GitHub Pages (best for presentation)
-Upload the folder to GitHub and enable **GitHub Pages**.  
-The game will work on **any computer** with a browser and internet connection.
-
----
-
 ## 🛠️ Technologies Used
 
-`HTML` `CSS` `JavaScript` `HTML5 Canvas` `localStorage` `PNG Sprites`
+`HTML` `CSS` `JavaScript` `HTML5 Canvas` `localStorage` `PNG`
