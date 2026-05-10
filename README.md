@@ -11,7 +11,7 @@
 | Member 1 | 220303923 | Ahmed Mahmoud Bahagat Mohamed Abdelmoula |
 | Member 2 | 220303904 | Mahamadou M. TRAORE |
 
-🔗 **GitHub Pages:** [Play the game here]([https://yourusername.github.io/star-collector](https://mahamadou-m-traore.github.io/Star-Collector/))
+🔗 **GitHub Pages:** [Play the game here](https://yourusername.github.io/star-collector](https://mahamadou-m-traore.github.io/Star-Collector/))
 
 ---
 
