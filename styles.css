@@ -1,0 +1,44 @@
+/* ── RESET ─────────────────────────────────────────────────────────────
+   Remove default browser margin and padding
+   ─────────────────────────────────────────────────────────────────── */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* ── BODY ──────────────────────────────────────────────────────────────
+   Dark space background for the whole page
+   Center everything vertically and horizontally
+   ─────────────────────────────────────────────────────────────────── */
+body {
+   background-color: #050510;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   font-family: Arial, sans-serif;
+   color: white;
+}
+
+/* ── CANVAS ────────────────────────────────────────────────────────────
+   The game screen
+   Blue glow around the canvas border
+   ─────────────────────────────────────────────────────────────────── */
+canvas {
+   display: block;
+   box-shadow: 0 0 40px rgba(0, 150, 255, 0.25),
+      0 0 80px rgba(0, 100, 200, 0.10);
+}
+
+/* ── CONTROLS TEXT ─────────────────────────────────────────────────────
+   Small instruction text below the canvas
+   ─────────────────────────────────────────────────────────────────── */
+#controls {
+   margin-top: 12px;
+   font-size: 13px;
+   color: #445566;
+   letter-spacing: 1px;
+   text-align: center;
+}
